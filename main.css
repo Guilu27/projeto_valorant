@@ -1,0 +1,127 @@
+@font-face {
+  font-family: "Valorant";
+  src: url(fonts/ValorantFont.ttf);
+}
+
+:root {
+  --font-1: "Oswald", sans-serif;
+  --font-2: "Roboto", sans-serif;
+  --font-3: "Valorant";
+  --color-1: #ff4655;
+  --color-2: #ece8e1;
+  --color-3: #0f1923;
+}
+
+body {
+  font-family: var(--font-2);
+}
+
+.valorant-text {
+  font-family: var(--font-3);
+}
+
+.oswvald-text {
+  font-family: var(--font-1);
+}
+
+.background-color-1 {
+  background-color: var(--color-1);
+}
+
+.background-color-2 {
+  background-color: var(--color-2);
+}
+
+.background-color-3 {
+    background-color: var(--color-3);
+  }
+
+.color-text-1 {
+  color: var(--color-1);
+}
+.color-text-2 {
+  color: var(--color-3);
+}
+.color-text-3 {
+  color: var(--color-2);
+}
+
+header {
+  background-color: var(--color-3);
+}
+
+header h1 {
+  font-size: 32px;
+}
+
+header nav a {
+  text-decoration: none;
+  font-family: var(--font-1);
+}
+
+header .nav .nav-link.active {
+  background-color: var(--color-1);
+  color: var(--color-3);
+}
+
+header .nav .nav-link {
+  color: var(--color-1);
+}
+
+.navbar-toggler {
+  background-color: var(--color-1);
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.nav-agentes .nav-link {
+  background-color: var(--color-1);
+  color: var(--color-2);
+}
+
+.nav-agentes .nav-link.active {
+  background-color: var(--color-2);
+  color: var(--color-3);
+}
+
+#agentes .btn {
+  background-color: var(--color-2);
+}
+
+.carousel-caption {
+  background-color: hsla(210, 40%, 10%, 0.39);
+}
+
+.zoon-armas {
+  position: relative;
+  overflow: hidden;
+}
+
+.zoon-armas img {
+  transition: transform 0.7s;
+}
+
+.overlay-armas {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  transform: translateX(-100%);
+  background-color: rgba(235, 231, 224, 0.85);
+  color: var(--color-3);
+  transition: transform 0.5s;
+}
+
+.zoon-armas:hover .overlay-armas {
+  transform: translateX(0);
+}
+
+.zoon-armas:hover > h3 {
+  color: transparent;
+}
+
+.zoon-armas:hover img {
+  transform: scale(0.9);
+}

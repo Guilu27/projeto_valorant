@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valorant</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    />
+    <link rel="import" href="component.html" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header class="navbar navbar-expand-lg sticky-top p-3" id="cabecalho">
+      <div class="container">
+        <div class="d-flex align-items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            height="40"
+            viewBox="0 0 100 100"
+            width="40"
+            class="me-2 pb-2"
+          >
+            <path
+              d="M99.25 48.66V10.28c0-.59-.75-.86-1.12-.39l-41.92 52.4a.627.627 0 00.49 1.02h30.29c.82 0 1.59-.37 2.1-1.01l9.57-11.96c.38-.48.59-1.07.59-1.68zM1.17 50.34L32.66 89.7c.51.64 1.28 1.01 2.1 1.01h30.29c.53 0 .82-.61.49-1.02L1.7 9.89c-.37-.46-1.12-.2-1.12.39v38.38c0 .61.21 1.2.59 1.68z"
+              fill="#FF4655"
+            ></path>
+          </svg>
+          <h1 class="m-0 valorant-text color-text-1">vAlorant</h1>
+        </div>
+
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu-navegacao"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <nav
+          class="navbar-collapse collapse justify-content-end align-items-center p-1"
+          id="menu-navegacao"
+        >
+          <ul class="nav nav-pills d-block d-md-flex m-0">
+            <li class="nav-item">
+              <a href="#sobre-jogo" class="nav-link color-text-1 active"
+                >Sobre o jogo</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#jogue-do-seu-jeito" class="nav-link color-text-1"
+                >Jogue do seu jeito</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#agentes" class="nav-link color-text-1">Agentes</a>
+            </li>
+            <li class="nav-item">
+              <a href="#mapas" class="nav-link color-text-1">Mapas</a>
+            </li>
+            <li class="nav-item">
+              <a href="#armas" class="nav-link color-text-1">Armas</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main
+      data-bs-spy="scroll"
+      data-bs-target="cabecalho"
+      data-bs-smooth-scroll="true"
+    >
+      <section id="sobre-jogo" class="background-color-1">
+        <div
+          class="carousel slide"
+          data-bs-ride="carousel"
+          id="carousel-principal"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3100">
+              <img
+                class="img-fluid"
+                src="img/carousel/slide-1.jpg"
+                alt="Espaco interno do restaurante"
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="3149">
+              <img
+                class="img-fluid"
+                src="img/carousel/slide-2.jpg"
+                alt="Duas tacas de vinho"
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="3178">
+              <img
+                class="img-fluid"
+                src="img/carousel/slide-3.jpg"
+                alt="Uma mesa com comida"
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="3178">
+              <img
+                class="img-fluid"
+                src="img/carousel/slide-4.jpg"
+                alt="Uma mesa com comida"
+              />
+            </div>
+            <button
+              type="button"
+              class="carousel-control-prev"
+              data-bs-target="#carousel-principal"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button
+              type="button"
+              class="carousel-control-next"
+              data-bs-target="#carousel-principal"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carousel-principal"
+                data-bs-slide-to="0"
+                class="active"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carousel-principal"
+                data-bs-slide-to="1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carousel-principal"
+                data-bs-slide-to="2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carousel-principal"
+                data-bs-slide-to="3"
+              ></button>
+            </div>
+          </div>
+        </div>
+        <div class="container pt-4 pb-4">
+          <div class="row align-items-center">
+            <div class="col-xl-7">
+              <h2 class="valorant-text text-center fs-2 color-text-3">
+                Sobre o Jogo
+              </h2>
+              <p class="fs-5 color-text-3">
+                Valorant é um jogo de tiro tático da Riot Games, combinando ação
+                e estratégia. Jogadores escolhem agentes com habilidades únicas
+                em equipes de ataque e defesa, buscando plantar ou desarmar o
+                Spike em partidas emocionantes e estratégicas.
+              </p>
+              <p class="fs-5 color-text-3">
+                Em Valorant, o sucesso vem da colaboração e comunicação entre
+                equipes. Coordenar estratégias, usar habilidades de agentes e
+                combinar precisão de tiros com táticas astutas são essenciais.
+                Mapas variados proporcionam uma experiência desafiadora.
+              </p>
+
+              <p class="fs-5 color-text-3">
+                Valorant oferece um ambiente competitivo emocionante, destacando
+                a importância da estratégia tanto para jogadores experientes
+                quanto para novatos em tiroteios táticos.
+              </p>
+            </div>
+            <div class="col-xl-5 mt-2 p-3">
+              <img class="img-fluid rounded" src="img/sobre_jogo.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="jogue-do-seu-jeito" class="background-color-2 pt-4 pb-4">
+        <div class="container">
+          <div class="row">
+            <h2 class="valorant-text text-center fs-2">Jogue do seu Jeito</h2>
+          </div>
+          <div class="row">
+            <div class="col-lg-4">
+              <img
+                class="img-fluid rounded"
+                src="img/jogue_do_seu_jeito/agentes.png"
+                alt=""
+              />
+              <h3 class="fs-4 mt-2">AGENTES</h3>
+              <h4 class="fs-5">A CRIATIVIDADE É SUA MELHOR ARMA.</h4>
+              <p>
+                Mais do que armas e munição, VALORANT inclui agentes com
+                habilidades adaptativas, rápidas e letais, que criam
+                oportunidades para você exibir sua mecânica de tiro. Cada Agente
+                é único, assim como os momentos de destaque de cada partida!
+              </p>
+            </div>
+            <div class="col-lg-4">
+              <img
+                class="img-fluid rounded"
+                src="img/jogue_do_seu_jeito/mapas.png"
+                alt=""
+              />
+              <h3 class="fs-4 mt-2">MAPAS</h3>
+              <h4 class="fs-5">BATALHE AO REDOR DO MUNDO.</h4>
+              <p>
+                Cada mapa serve como um palco para mostrar sua criatividade. Os
+                mapas são feitos sob medida para estratégias de equipe, jogadas
+                espetaculares e momentos eletrizantes. Faça as jogadas que todo
+                mundo vai tentar imitar no futuro!
+              </p>
+            </div>
+            <div class="col-lg-4">
+              <img
+                class="img-fluid rounded"
+                src="img/jogue_do_seu_jeito/armas.png"
+                alt=""
+              />
+              <h3 class="fs-4 mt-2">ARMAS</h3>
+              <h4 class="fs-5">ELEVANDO O JOGO DE TIRO A UM NOVO PATAMAR.</h4>
+              <p>
+                Em Valorant, as armas vão além do convencional, proporcionando
+                uma variedade estratégica para cada momento. Desde rifles de
+                precisão a submetralhadoras ágeis, cada arma possui um estilo
+                único, permitindo que você personalize sua abordagem. A escolha
+                inteligente das armas é a chave para a vitória. Explore o
+                arsenal e torne-se um mestre das armas em Valorant!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="agentes" class="background-color-1">
+        <div class="pt-4 pb-4">
+          <div class="container">
+            <div class="row">
+              <h2 class="valorant-text color-text-3 text-center">Agentes</h2>
+            </div>
+            <div class="row">
+              <aside class="col-lg-2">
+                <nav class="nav nav-pills flex-column nav-agentes">
+                  <button
+                    type="button"
+                    class="text-start nav-link background-color-2 active"
+                    data-bs-toggle="tab"
+                    data-bs-target="#controladores"
+                  >
+                    CONTROLADORES
+                  </button>
+                  <button
+                    type="button"
+                    class="text-start nav-link background-color-2"
+                    data-bs-toggle="tab"
+                    data-bs-target="#duelistas"
+                  >
+                    DUELISTAS
+                  </button>
+                  <button
+                    type="button"
+                    class="text-start nav-link background-color-2"
+                    data-bs-toggle="tab"
+                    data-bs-target="#sentinelas"
+                  >
+                    SENTINELAS
+                  </button>
+                  <button
+                    type="button"
+                    class="text-start nav-link background-color-2 mb-3"
+                    data-bs-toggle="tab"
+                    data-bs-target="#iniciadores"
+                  >
+                    INICIADORES
+                  </button>
+                </nav>
+              </aside>
+              <div class="col-lg-10">
+                <div class="tab-content">
+                  <div class="tab-pane active" id="controladores">
+                    <div class="row">
+                      <div class="col-md-6 col-lg-4 mb-4">
+                        <img
+                          class="d-block w-100"
+                          src="img/agentes/controladores/Brimstone.png"
+                        />
+                        <h5
+                          class="color-text-3 text-center oswvald-text fs-3 mt-2"
+                        >
+                          Brimstone
+                        </h5>
+                        <p class="color-text-3 text-center">
+                          Vindo diretamente dos EUA, o arsenal orbital do
+                          Brimstone garante que o esquadrão dele sempre esteja
+                          em vantagem. Sua capacidade de oferecer utilitários
+                          com precisão e segurança faz dele um comandante
+                          inigualável na linha de frente.
+                        </p>
+                        <a
+                          target="_blank"
+                          href="https://playvalorant.com/pt-br/agents/brimstone/"
+                          class="btn w-100"
+                          >Veja mais</a
+                        >
+                      </div>
+
+                      <div class="col-md-6 col-lg-4 mb-4">
+                        <img
+                          class="d-block w-100"
+                          src="img/agentes/controladores/Viper.png"
+                        />
+                        <h5
+                          class="color-text-3 text-center oswvald-text fs-3 mt-2"
+                        >
+                          Viper
+                        </h5>
+                        <p class="color-text-3 text-center">
+                          Viper, a química dos Estados Unidos, emprega uma
+                          variedade de dispositivos químicos venenosos para
+                          controlar o campo de batalha e prejudicar a visão do
+                          inimigo. Se as toxinas não matarem a presa, seus jogos
+                          mentais certamente o farão.
+                        </p>
+                        <a
+                          target="_blank"
+                          href="https://playvalorant.com/pt-br/agents/viper/"
+                          class="btn w-100"
+                          >Veja mais</a
+                        >
+                      </div>
+
+                      <div class="col-md-6 col-lg-4 mb-4">
+                        <img
+                          class="d-block w-100"
+                          src="img/agentes/controladores/Omen.png"
+                        />
+                        <h5
+                          class="color-text-3 text-center oswvald-text fs-3 mt-2"
+                        >
+                          Omen
+                        </h5>
+                        <p class="color-text-3 text-center">
+                          Omen, uma lembrança fantasmagórica, caça nas sombras.
+                          Ele cega os inimigos, teleporta-se pelo campo e deixa
+                          a paranoia assumir o controle enquanto o adversário
+                          tenta descobrir de onde virá seu próximo ataque.
+                        </p>
+                        <a
+                          target="_blank"
+                          href="https://playvalorant.com/pt-br/agents/omen/"
+                          class="btn w-100"
+                          >Veja mais</a
+                        >
+                      </div>
+
+                      <div class="col-md-6 col-lg-4 mb-4">
+                        <img
+                          class="d-block w-100"
+                          src="img/agentes/controladores/Astra.png"
+                        />
+                        <h5
+                          class="color-text-3 text-center oswvald-text fs-3 mt-2"
+                        >
+                          Astra
+                        </h5>
+                        <p class="color-text-3 text-center">
+                          Astra, a Agente ganense, utiliza energias cósmicas
+                          para moldar o campo de batalha a seu bel-prazer. Com
+                          total domínio da sua forma astral e um talento
+                          estratégico nato, ela está sempre anos-luz à frente
+                          dos inimigos.
+                        </p>
+                        <a
+                          target="_blank"
+                          href="https://playvalorant.com/pt-br/agents/astra/"
+                          class="btn w-100"
+                          >Veja mais</a
+                        >
+                      </div>
+
+                      <div class="col-md-6 col-lg-4 mb-4">
+                        <img
+                          class="d-block w-100"
+                          src="img/agentes/controladores/Harbor.png"
+                        />
+                        <h5
+                          class="color-text-3 text-center oswvald-text fs-3 mt-2"
+                        >
+                          Harbor
+                        </h5>
+                        <p class="color-text-3 text-center">
+                          Vindo do litoral indiano, Harbor entra em campo com a
+                          força da tormenta, empunhando tecnologia ancestral com
+                          domínio sobre a água. Ele libera corredeiras
+                          espumantes e ondas esmagadoras para proteger seus
+                          aliados ou atacar aqueles que se opõem a ele.
+                        </p>
+                        <a
+                          target="_blank"
+                          href="https://playvalorant.com/pt-br/agents/harbor/"
+                          class="btn w-100"
+                          >Veja mais</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="tab-pane" id="duelistas">
+                    <div class="row">
+                      <div class="col-md-6 col-lg-4 mb-4">
+                        <img
+                          class="d-block w-100"
+                          src="img/agentes/duelistas/Phx.png"
+                        />
+                        <h5
+                          class="color-text-3 text-center oswvald-text fs-3 mt-2"
+                        >
+                          Phoenix
+                        </h5>
+                        <p class="color-text-3 text-center">
+                          Chegando com tudo diretamente do Reino Unido, o poder
+                          estelar de Phoenix reluz em seu estilo de luta,
+                          incendiando o campo de batalha com luz e estilo. Tendo
+                          ajuda ou não, ele entra na luta como e quando achar
+                          que deve.
+                        </p>
+                        <a
+                          target="_blank"
+                          href="https://playvalorant.com/pt-br/agents/phoenix/"
+                          class="btn w-100"
+                          >Veja mais</a
+                        >
+                      </div>
+                      <div class="col-md-6 col-lg-4 mb-4">
+                        <img
+                          class="d-block w-100"
+                          src="img/agentes/duelistas/Reyna.png"
+                        />
+                        <h5
+                          class="color-text-3 text-center oswvald-text fs-3 mt-2"
+                        >
+                          Reyna
+                        </h5>
+                        <p class="color-text-3 text-center">
+                          Criada no coração do México, Reyna domina o combate
+                          individual, destacando-se a cada abate efetuado. Sua
+                          capacidade só é limitada por sua própria perícia,
+                          tornando-a bastante dependente de desempenho.
+                        </p>
+                        <a
+                          target="_blank"
+                          href="https://playvalorant.com/pt-br/agents/reyna/"
+                          class="btn w-100"
+                          >Veja mais</a
+                        >
+                      </div>
+
+                      <div class="col-md-6 col-lg-4 mb-4">
+                        <img
+                          class="d-block w-100"
+                          src="img/agentes/duelistas/Jett.png"
+                        />
+                        <h5
+                          class="color-text-3 text-center oswvald-text fs-3 mt-2"
+                        >
+                          Jett
+                        </h5>
+                        <p class="color-text-3 text-center">
+                          Representando a Coreia do Sul, sua terra natal, Jett
+                          tem um estilo de luta ágil e evasivo que permite que
+                          ela assuma riscos como ninguém. Ela corre em meio a
+                          qualquer confronto, cortando os inimigos antes mesmo
+                          que eles percebam quem ou o que os atingiu.
+                        </p>
+                        <a
+                          target="_blank"
+                          href="https://playvalorant.com/pt-br/agents/jett/"
+                          class="btn w-100"
+                          >Veja mais</a
+                        >
+                      </div>
+
+                      <div class="col-md-6 col-lg-4 mb-4">
+                        <img
+                          class="d-block w-100"
+                          src="img/agentes/duelistas/Raze.png"
+                        />
+                        <h5
+                          class="color-text-3 text-center oswvald-text fs-3 mt-2"
+                        >
+                          Raze
+                        </h5>
+                        <p class="color-text-3 text-center">
+                          Raze chega do Brasil com uma explosão de carisma e
+                          armas enormes. Com seu estilo de jogo "porradeiro",
+                          ela é craque em desentocar inimigos entrincheirados e
+                          limpar espaços apertados com uma bela dose de BUUUM!
+                        </p>
+                        <a
+                          target="_blank"
+                          href="https://playvalorant.com/pt-br/agents/raze/"
+                          class="btn w-100"
+                          >Veja mais</a
+                        >
+                      </div>
+
+                      <div class="col-md-6 col-lg-4 mb-4">
+                        <img
+                          class="d-block w-100"
+                          src="img/agentes/duelistas/yoru.png"
+                        />
+                        <h5
+                          class="color-text-3 text-center oswvald-text fs-3 mt-2"
+                        >
+                          Yoru
+                        </h5>
+                        <p class="color-text-3 text-center">
+                          Yoru, nativo do Japão, abre fendas na realidade para
+                          infiltrar as linhas inimigas sem ser visto. Ele usa
+                          tanto artimanhas quanto táticas agressivas, e os alvos
+                          são abatidos sem saber de onde o ataque veio.
+                        </p>
+                        <a
+                          target="_blank"
+                          href="https://playvalorant.com/pt-br/agents/yoru/"
+                          class="btn w-100"
+                          >Veja mais</a
+                        >
+                      </div>
+
+                      <div class="col-md-6 col-lg-4 mb-4">
+                        <img
+                          class="d-block w-100"
+                          src="img/agentes/duelistas/Neon.png"
+                        />
+                        <h5
+                          class="color-text-3 text-center oswvald-text fs-3 mt-2"
+                        >
+                          Neon
+                        </h5>
+                        <p class="color-text-3 text-center">
+                          Neon, nossa Agente filipina, avança em velocidades
+                          incríveis, descarregando surtos de radiância
+                          bioelétrica tão rapidamente quanto seu corpo consegue
+                          gerá-los. Ela corre à frente para pegar os inimigos de
+                          surpresa, abatendo-os mais rápido do que um raio.
+                        </p>
+                        <a
+                          target="_blank"
+                          href="https://playvalorant.com/pt-br/agents/neon/"
+                          class="btn w-100"
+                          >Veja mais</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="tab-pane" id="sentinelas">
+                    <div class="row">
+                      <div class="col-md-6 col-lg-4 mb-4">
+                        <img
+                          class="d-block w-100"
+                          src="img/agentes/sentinelas/sage.png"
+                        />
+                        <h5
+                          class="color-text-3 text-center oswvald-text fs-3 mt-2"
+                        >
+                          Sage
+                        </h5>
+                        <p class="color-text-3 text-center">
+                          Como uma verdadeira fortaleza chinesa, Sage traz
+                          segurança para si mesma e para a equipe aonde quer que
+                          vá. Capaz de reviver aliados e rechaçar investidas
+                          agressivas, ela oferece um centro de calmaria em meio
+                          ao caos da batalha.
+                        </p>
+                        <a
+                          target="_blank"
+                          href="https://playvalorant.com/pt-br/agents/sage/"
+                          class="btn w-100"
+                          >Veja mais</a
+                        >
+                      </div>
+
+                      <div class="col-md-6 col-lg-4 mb-4">
+                        <img
+                          class="d-block w-100"
+                          src="img/agentes/sentinelas/Cypher.png"
+                        />
+                        <h5
+                          class="color-text-3 text-center oswvald-text fs-3 mt-2"
+                        >
+                          Cypher
+                        </h5>
+                        <p class="color-text-3 text-center">
+                          Cypher, um vendedor de informações do Marrocos, é uma
+                          verdadeira rede de vigilância de um homem só que fica
+                          de olho em cada movimento dos inimigos. Nenhum segredo
+                          está a salvo. Nenhuma manobra passa despercebida.
+                          Cypher está sempre vigiando.
+                        </p>
+                        <a
+                          target="_blank"
+                          href="https://playvalorant.com/pt-br/agents/cypher/"
+                          class="btn w-100"
+                          >Veja mais</a
+                        >
+                      </div>
+
+                      <div class="col-md-6 col-lg-4 mb-4">
+                        <img
+                          class="d-block w-100"
+                          src="img/agentes/sentinelas/KillJoy.png"
+                        />
+                        <h5
+                          class="color-text-3 text-center oswvald-text fs-3 mt-2"
+                        >
+                          KillJoy
+                        </h5>
+                        <p class="color-text-3 text-center">
+                          Killjoy, uma alemã genial, defende posições-chave no
+                          campo de batalha facilmente com seu arsenal de
+                          invenções. Se o dano causado por seu equipamento não
+                          der cabo dos inimigos, os efeitos negativos de seus
+                          queridos robôs darão conta do recado.
+                        </p>
+                        <a
+                          target="_blank"
+                          href="https://playvalorant.com/pt-br/agents/killjoy/"
+                          class="btn w-100"
+                          >Veja mais</a
+                        >
+                      </div>
+
+                      <div class="col-md-6 col-lg-4 mb-4">
+                        <img
+                          class="d-block w-100"
+                          src="img/agentes/sentinelas/Chamber.png"
+                        />
+                        <h5
+                          class="color-text-3 text-center oswvald-text fs-3 mt-2"
+                        >
+                          Chamber
+                        </h5>
+                        <p class="color-text-3 text-center">
+                          Bem-vestido e armado até os dentes, o criador de armas
+                          francês Chamber coloca os inimigos para correr com
+                          precisão mortal. Use e abuse do arsenal personalizado
+                          dele para segurar posições e abater inimigos de longe,
+                          criando a defesa perfeita para qualquer plano.
+                        </p>
+                        <a
+                          target="_blank"
+                          href="https://playvalorant.com/pt-br/agents/chamber/"
+                          class="btn w-100"
+                          >Veja mais</a
+                        >
+                      </div>
+
+                      <div class="col-md-6 col-lg-4 mb-4">
+                        <img
+                          class="d-block w-100"
+                          src="img/agentes/sentinelas/Deadlock.png"
+                        />
+                        <h5
+                          class="color-text-3 text-center oswvald-text fs-3 mt-2"
+                        >
+                          Deadlock
+                        </h5>
+                        <p class="color-text-3 text-center">
+                          A agente norueguesa Deadlock posiciona uma gama de
+                          nanofios de alta tecnologia para proteger o campo de
+                          batalha até mesmo do ataque mais letal. Ninguém escapa
+                          do seu olhar vigilante. Ninguém sobrevive à sua
+                          ferocidade implacável.
+                        </p>
+                        <a
+                          target="_blank"
+                          href="https://playvalorant.com/pt-br/agents/deadlock/"
+                          class="btn w-100"
+                          >Veja mais</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="tab-pane" id="iniciadores">
+                    <div class="row">
+                      <div class="col-md-6 col-lg-4 mb-4">
+                        <img
+                          class="d-block w-100"
+                          src="img/agentes/iniciadores/Sova.png"
+                        />
+                        <h5
+                          class="color-text-3 text-center oswvald-text fs-3 mt-2"
+                        >
+                          Sova
+                        </h5>
+                        <p class="color-text-3 text-center">
+                          Nascido sob o eterno inverno das tundras russas, Sova
+                          rastreia, encontra e elimina inimigos com eficiência e
+                          precisão implacáveis. Seu arco personalizado e suas
+                          habilidades inigualáveis de reconhecimento garantem
+                          que nenhuma presa escape.
+                        </p>
+                        <a
+                          target="_blank"
+                          href="https://playvalorant.com/pt-br/agents/sova/"
+                          class="btn w-100"
+                          >Veja mais</a
+                        >
+                      </div>
+
+                      <div class="col-md-6 col-lg-4 mb-4">
+                        <img
+                          class="d-block w-100"
+                          src="img/agentes/iniciadores/Breach.png"
+                        />
+                        <h5
+                          class="color-text-3 text-center oswvald-text fs-3 mt-2"
+                        >
+                          Breach
+                        </h5>
+                        <p class="color-text-3 text-center">
+                          Breach, o homem-biônico sueco, dispara poderosos jatos
+                          cinéticos para forçar a abertura de um caminho pelo
+                          território inimigo. O dano e a interrupção que ele
+                          causa garantem que nenhuma luta seja justa.
+                        </p>
+                        <a
+                          target="_blank"
+                          href="https://playvalorant.com/pt-br/agents/breach/"
+                          class="btn w-100"
+                          >Veja mais</a
+                        >
+                      </div>
+
+                      <div class="col-md-6 col-lg-4 mb-4">
+                        <img
+                          class="d-block w-100"
+                          src="img/agentes/iniciadores/Skye.png"
+                        />
+                        <h5
+                          class="color-text-3 text-center oswvald-text fs-3 mt-2"
+                        >
+                          Skye
+                        </h5>
+                        <p class="color-text-3 text-center">
+                          Mandando um salve direto da Austrália, Skye e sua
+                          equipe de feras desbravam territórios hostis. Com seus
+                          poderes de cura e suas criações que partem pra cima
+                          dos inimigos, qualquer equipe ficará mais forte e mais
+                          segura tendo Skye como aliada.
+                        </p>
+                        <a
+                          target="_blank"
+                          href="https://playvalorant.com/pt-br/agents/skye/"
+                          class="btn w-100"
+                          >Veja mais</a
+                        >
+                      </div>
+
+                      <div class="col-md-6 col-lg-4 mb-4">
+                        <img
+                          class="d-block w-100"
+                          src="img/agentes/iniciadores/KAYO.png"
+                        />
+                        <h5
+                          class="color-text-3 text-center oswvald-text fs-3 mt-2"
+                        >
+                          KAY/O
+                        </h5>
+                        <p class="color-text-3 text-center">
+                          KAY/O é uma máquina de guerra construída com um único
+                          propósito: neutralizar Radiantes. Ele é capaz de
+                          Suprimir habilidades inimigas, anulando a capacidade
+                          de contra-ataque dos adversários e dando a si e a seus
+                          aliados uma vantagem essencial em combate.
+                        </p>
+                        <a
+                          target="_blank"
+                          href="https://playvalorant.com/pt-br/agents/kay-o/"
+                          class="btn w-100"
+                          >Veja mais</a
+                        >
+                      </div>
+
+                      <div class="col-md-6 col-lg-4 mb-4">
+                        <img
+                          class="d-block w-100"
+                          src="img/agentes/iniciadores/Fade.png"
+                        />
+                        <h5
+                          class="color-text-3 text-center oswvald-text fs-3 mt-2"
+                        >
+                          Fade
+                        </h5>
+                        <p class="color-text-3 text-center">
+                          Fade, uma caçadora de recompensas turca, usa o poder
+                          dos pesadelos para capturar os segredos dos inimigos.
+                          Personificando o próprio terror, ela persegue os alvos
+                          e revela seus medos mais profundos para, depois,
+                          destruí-los na escuridão.
+                        </p>
+                        <a
+                          target="_blank"
+                          href="https://playvalorant.com/pt-br/agents/fade/"
+                          class="btn w-100"
+                          >Veja mais</a
+                        >
+                      </div>
+
+                      <div class="col-md-6 col-lg-4 mb-4">
+                        <img
+                          class="d-block w-100"
+                          src="img/agentes/iniciadores/Gekko.png"
+                        />
+                        <h5
+                          class="color-text-3 text-center oswvald-text fs-3 mt-2"
+                        >
+                          Gekko
+                        </h5>
+                        <p class="color-text-3 text-center">
+                          Gekko, de Los Angeles, lidera um grupo muito unido de
+                          criaturas caóticas. Seus amigos atropelam tudo,
+                          tirando os inimigos do caminho. Depois, Gekko corre
+                          atrás deles para reagrupá-los e reiniciar o processo.
+                        </p>
+                        <a
+                          target="_blank"
+                          href="https://playvalorant.com/pt-br/agents/gekko/"
+                          class="btn w-100"
+                          >Veja mais</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="mapas" class="background-color-2 pt-4 pb-4">
+        <h2 class="valorant-text text-center color-text-2">MApas</h2>
+        <div class="container">
+          <div
+            class="carousel slide"
+            data-bs-ride="carousel"
+            id="carousel-mapas"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="3100">
+                <img
+                  class="w-100 rounded"
+                  src="img/mapas/Lotus.webp"
+                  alt="Espaco interno do restaurante object-fit-cover"
+                />
+                <div class="carousel-caption d-none d-md-block rounded">
+                  <h5 class="oswvald-text">LOTUS</h5>
+                  <p>
+                    Uma estrutura misteriosa com um conduíte astral irradia
+                    poder ancestral. Grandes portas de pedra oferecem várias
+                    oportunidades de movimentação e revelam caminhos para três
+                    locais enigmáticos.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="3100">
+                <img
+                  class="w-100 rounded"
+                  src="img/mapas/Pearl.webp"
+                  alt="Espaco interno do restaurante"
+                />
+                <div class="carousel-caption d-none d-md-block rounded">
+                  <h5 class="oswvald-text">PEARL</h5>
+                  <p>
+                    Atacantes avançam em direção aos Defensores neste vibrante
+                    mapa subaquático com dois pontos principais. Pearl é um mapa
+                    sem mecânicas focado no ambiente. Encare a batalha em um
+                    Meio compacto ou em áreas mais alongadas no nosso primeiro
+                    mapa situado na Terra Ômega.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="3100">
+                <img
+                  class="w-100 rounded"
+                  src="img/mapas/Fracture.webp"
+                  alt="Espaco interno do restaurante"
+                />
+                <div class="carousel-caption d-none d-md-block rounded">
+                  <h5 class="oswvald-text">FRACTURE</h5>
+                  <p>
+                    Um local de pesquisas altamente confidencial partido ao meio
+                    por um experimento com Radianita malsucedido. Com opções tão
+                    divididas quanto o próprio mapa para os defensores, a
+                    escolha é sua: encare os atacantes na própria base deles ou
+                    prepare o terreno para um ataque iminente.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="3100">
+                <img
+                  class="w-100 rounded"
+                  src="img/mapas/breeze.png"
+                  alt="Espaco interno do restaurante"
+                />
+                <div class="carousel-caption d-none d-md-block rounded">
+                  <h5 class="oswvald-text">BREEZE</h5>
+                  <p>
+                    Conheça as ruínas históricas ou visite as grutas deste
+                    paraíso tropical. Mas é bom se cobrir, pois temos espaços
+                    muito abertos e embates de longa distância. Cuide dos seus
+                    flancos e você poderá curtir a brisa do Breeze.
+                  </p>
+                </div>
+              </div>
+
+              <div class="carousel-item" data-bs-interval="3100">
+                <img
+                  class="w-100 rounded"
+                  src="img/mapas/icebox.png"
+                  alt="Espaco interno do restaurante"
+                />
+                <div class="carousel-caption d-none d-md-block rounded">
+                  <h5 class="oswvald-text">ICEBOX</h5>
+                  <p>
+                    Seu próximo campo de batalha será uma área de escavação
+                    secreta da Kingdom retomada pela força do Ártico. Você
+                    precisará ter cuidado com os terrenos horizontais dos dois
+                    pontos principais, que são protegidos por neve e metal.
+                    Aproveite para usar as tirolesas, e seus inimigos nunca
+                    verão seu ataque iminente.
+                  </p>
+                </div>
+              </div>
+
+              <div class="carousel-item" data-bs-interval="3100">
+                <img
+                  class="w-100 rounded"
+                  src="img/mapas/Pearl.webp"
+                  alt="Espaco interno do restaurante"
+                />
+                <div class="carousel-caption d-none d-md-block rounded">
+                  <h5 class="oswvald-text">BIND</h5>
+                  <p>
+                    Dois pontos. Nenhuma área no meio. Você precisa escolher:
+                    direita ou esquerda? E aí, qual vai ser? Ambos os lados
+                    oferecem caminhos diretos para os atacantes, e dois
+                    teleportadores de sentido único facilitam o flanqueamento.
+                  </p>
+                </div>
+              </div>
+
+              <div class="carousel-item" data-bs-interval="3100">
+                <img
+                  class="w-100 rounded"
+                  src="img/mapas/haven.webp"
+                  alt="Espaco interno do restaurante"
+                />
+                <div class="carousel-caption d-none d-md-block rounded">
+                  <h5 class="oswvald-text">HAVEN</h5>
+                  <p>
+                    Sob um mosteiro abandonado, é possível ouvir agentes se
+                    enfrentando pelo controle de três pontos distintos. Neste
+                    mapa, há mais áreas para controlar. Em compensação, os
+                    defensores também conseguem aproveitar o território extra
+                    para coordenar investidas mais agressivas.
+                  </p>
+                </div>
+              </div>
+
+              <div class="carousel-item" data-bs-interval="3100">
+                <img
+                  class="w-100 rounded"
+                  src="img/mapas/split.webp"
+                  alt="Espaco interno do restaurante"
+                />
+                <div class="carousel-caption d-none d-md-block rounded">
+                  <h5 class="oswvald-text">SPLIT</h5>
+                  <p>
+                    Se quiser avançar, é preciso subir. Separados por uma área
+                    central elevada, dois pontos fornecem movimentação rápida
+                    com duas cordas ascendentes. Cada ponto tem uma torre
+                    imponente que é vital para o controle da área. E não se
+                    esqueça: mantenha os olhos abertos e focados nas áreas
+                    elevadas antes que tudo vá pelos ares.
+                  </p>
+                </div>
+              </div>
+
+              <div class="carousel-item" data-bs-interval="3100">
+                <img
+                  class="w-100 rounded"
+                  src="img/mapas/ascent.webp"
+                  alt="Espaco interno do restaurante"
+                />
+                <div class="carousel-caption d-none d-md-block rounded">
+                  <h5 class="oswvald-text">ASCENT</h5>
+                  <p>
+                    Com várias opções de posicionamento e conflito, um
+                    território aberto divide duas áreas em Ascent. Cada uma pode
+                    ser fortificada por portas explosivas irreversíveis que,
+                    quando derrubadas, forçam as equipes a destruí-las ou a
+                    acharem outra maneira de prosseguir. Não deixe que o inimigo
+                    tome o seu território.
+                  </p>
+                </div>
+              </div>
+
+              <button
+                type="button"
+                class="carousel-control-prev"
+                data-bs-target="#carousel-mapas"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button
+                type="button"
+                class="carousel-control-next"
+                data-bs-target="#carousel-mapas"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon"></span>
+              </button>
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carousel-mapas"
+                  data-bs-slide-to="0"
+                  class="active"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carousel-mapas"
+                  data-bs-slide-to="1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carousel-mapas"
+                  data-bs-slide-to="2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carousel-mapas"
+                  data-bs-slide-to="3"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carousel-mapas"
+                  data-bs-slide-to="4"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carousel-mapas"
+                  data-bs-slide-to="5"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carousel-mapas"
+                  data-bs-slide-to="6"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carousel-mapas"
+                  data-bs-slide-to="7"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carousel-mapas"
+                  data-bs-slide-to="8"
+                ></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="armas" class="background-color-1 pt-4 pb-4">
+        <div class="container">
+          <h2 class="valorant-text text-center color-text-3">ARMAS</h2>
+          <div class="row">
+            <div class="col-lg-6 p-2">
+              <div class="zoon-armas">
+                <img class="w-100" src="img/armas/classic.png" alt="" />
+                <div class="overlay-armas w-100 h-100">
+                  <h3 class="oswvald-text color-text-2 fs-2 m-2">CLASSIC</h3>
+                  <p class="m-2 fs-sm-1">
+                    Leve e versátil, a arma padrão é um clássico inegável.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 p-2">
+              <div class="zoon-armas">
+                <img class="w-100" src="img/armas/shorty.png" alt="" />
+                <div class="overlay-armas w-100 h-100">
+                  <h3 class="oswvald-text color-text-2 fs-2 m-2">SHORTY</h3>
+                  <p class="m-2">
+                    Surpreenda seus inimigos bem de perto para obter o máximo de
+                    eficiência.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 p-2">
+              <div class="zoon-armas">
+                <img class="w-100" src="img/armas/frenzy.png" alt="" />
+                <div class="overlay-armas w-100 h-100">
+                  <h3 class="oswvald-text color-text-2 fs-2 m-2">FRENZY</h3>
+                  <p class="m-2">
+                    A curta distância, dedo no gatilho! A longa distância... é
+                    melhor procurar outra arma.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 p-2">
+              <div class="zoon-armas">
+                <img class="w-100" src="img/armas/ghost.png" alt="" />
+                <div class="overlay-armas w-100 h-100">
+                  <h3 class="oswvald-text color-text-2 fs-2 m-2">GHOST</h3>
+                  <p class="m-2">
+                    Elegante, silenciosa e eficiente ao disparar de qualquer
+                    distância.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 p-2">
+              <div class="zoon-armas">
+                <img class="w-100" src="img/armas/sheriff.png" alt="" />
+                <div class="overlay-armas w-100 h-100">
+                  <h3 class="oswvald-text color-text-2 fs-2 m-2">SHERIFF</h3>
+                  <p class="m-2">
+                    Sheriff é um revólver moderno feito para quem busca tiros
+                    certeiros na cabeça do inimigo.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 p-2">
+              <div class="zoon-armas">
+                <img class="w-100" src="img/armas/stinger.png" alt="" />
+                <div class="overlay-armas w-100 h-100">
+                  <h3 class="oswvald-text color-text-2 fs-2 m-2">STINGER</h3>
+                  <p class="m-2">
+                    Os inimigos sabem que o fim chegou quando sentem o disparo
+                    da Stinger.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 p-2">
+              <div class="zoon-armas">
+                <img class="w-100" src="img/armas/spectre.png" alt="" />
+                <div class="overlay-armas w-100 h-100">
+                  <h3 class="oswvald-text color-text-2 fs-2 m-2">SPECTRE</h3>
+                  <p class="m-2">
+                    Bateu a dúvida? Vai de Spectre que tudo dá certo.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 p-2">
+              <div class="zoon-armas">
+                <img class="w-100" src="img/armas/bucky.png" alt="" />
+                <div class="overlay-armas w-100 h-100">
+                  <h3 class="oswvald-text color-text-2 fs-2 m-2">BUCKY</h3>
+                  <p class="m-2">
+                    Atacante? Defensor? Tanto faz. O importante é ter uma
+                    escopeta dessas em mãos.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 p-2">
+              <div class="zoon-armas">
+                <img class="w-100" src="img/armas/judge.png" alt="" />
+                <div class="overlay-armas w-100 h-100">
+                  <h3 class="oswvald-text color-text-2 fs-2 m-2">JUDGE</h3>
+                  <p class="m-2">
+                    Judge é uma escopeta automática de tiro rápido que causa
+                    muito dano constante.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 p-2">
+              <div class="zoon-armas">
+                <img class="w-100" src="img/armas/bulldog.png" alt="" />
+                <div class="overlay-armas w-100 h-100">
+                  <h3 class="oswvald-text color-text-2 fs-2 m-2">BULLDOG</h3>
+                  <p class="m-2">
+                    Bulldog é o tipo de arma que traz satisfação ao conseguir um
+                    abate.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 p-2">
+              <div class="zoon-armas">
+                <img class="w-100" src="img/armas/guardian.png" alt="" />
+                <div class="overlay-armas w-100 h-100">
+                  <h3 class="oswvald-text color-text-2 fs-2 m-2">GUARDIAN</h3>
+                  <p class="m-2">
+                    Esta arma dá um show nas mãos de atiradores pacientes.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 p-2">
+              <div class="zoon-armas">
+                <img class="w-100" src="img/armas/phantom.png" alt="" />
+                <div class="overlay-armas w-100 h-100">
+                  <h3 class="oswvald-text color-text-2 fs-2 m-2">PHANTOM</h3>
+                  <p class="m-2">
+                    Phantom é uma arma equilibrada, projetada para disparar
+                    tiros estáveis que alcançam longas distâncias.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 p-2">
+              <div class="zoon-armas">
+                <img class="w-100" src="img/armas/vandal.png" alt="" />
+                <div class="overlay-armas w-100 h-100">
+                  <h3 class="oswvald-text color-text-2 fs-2 m-2">VANDAL</h3>
+                  <p class="m-2">
+                    Este fuzil extremamente potente causa um enorme estrago com
+                    pequenas rajadas de balas.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 p-2">
+              <div class="zoon-armas">
+                <img class="w-100" src="img/armas/marshal.png" alt="" />
+                <div class="overlay-armas w-100 h-100">
+                  <h3 class="oswvald-text color-text-2 fs-2 m-2">MARSHAL</h3>
+                  <p class="m-2">
+                    Escolha um ângulo bom, mire, e o alvo se arrependerá de ter
+                    dobrado aquela esquina.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 p-2">
+              <div class="zoon-armas">
+                <img class="w-100" src="img/armas/operator.png" alt="" />
+                <div class="overlay-armas w-100 h-100">
+                  <h3 class="oswvald-text color-text-2 fs-2 m-2">OPERATOR</h3>
+                  <p class="m-2">
+                    Aconchegue-se em um lugar e será capaz de controlar áreas
+                    importantes.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 p-2">
+              <div class="zoon-armas">
+                <img class="w-100" src="img/armas/ares.png" alt="" />
+                <div class="overlay-armas w-100 h-100">
+                  <h3 class="oswvald-text color-text-2 fs-2 m-2">ARES</h3>
+                  <p class="m-2">Não subestime o poder desta arma.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 p-2">
+              <div class="zoon-armas">
+                <img class="w-100" src="img/armas/odin.png" alt="" />
+                <div class="overlay-armas w-100 h-100">
+                  <h3 class="oswvald-text color-text-2 fs-2 m-2">ODIN</h3>
+                  <p class="m-2">
+                    Ao empunhar uma arma grandiosa como esta, uma coisa é certa:
+                    quem a possui ascenderá à glória enquanto o oponente cai em
+                    ruína.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 p-2">
+              <div class="zoon-armas">
+                <img class="w-100" src="img/armas/tactical-knife.png" alt="" />
+                <div class="overlay-armas w-100 h-100">
+                  <h3 class="oswvald-text color-text-2 fs-2 m-2">
+                    FACA TÁTICA
+                  </h3>
+                  <p class="m-2">Para uma solução mais íntima.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="background-color-3 color-text-3 p-2 text-center">
+      © 2023 Riot Games, Inc. Riot Games, VALORANT
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
